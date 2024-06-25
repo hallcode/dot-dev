@@ -1,0 +1,270 @@
+{% include 'layout/html_head.html' %}
+
+<header class="section cv" id="site-header">
+    <hgroup>
+        <h1>Alex Hall</h1>
+        <p>Programmer, activist, photographer</p>
+    </hgroup>
+    <ul>
+        <li>
+            alex@alexhall.dev
+        </li>
+        <li>
+            +44 (0) 7736 096 860
+        </li>
+        <li>
+            www.alexhall.dev
+        </li>
+    </ul>
+</header>
+
+<section class="cv-section">
+    <header class="section-title">
+        <h1>History</h1>
+    </header>
+
+    <ul>
+        <li>
+            <header>
+                <h2>Ocado Group</h2>
+                <p>2024+</p>
+            </header>
+            <p>Delivery driver</p>
+        </li>
+        <li>
+            <header>
+                <h2>Peterborough Tenants Union</h2>
+                <p>2020+</p>
+            </header>
+            <p>Trustee</p>
+        </li>
+        <li>
+            <header>
+                <h2>Markerstudy</h2>
+                <p>2018-2024</p>
+            </header>
+            <p><em>Formerly BGL Group</em></p>
+            <p>Software Engineer - RPG</p>
+        </li>
+        <li>
+            <header>
+                <h2>Peterborough Council for Voluntary Service</h2>
+                <p>2017-2021</p>
+            </header>
+            <p>Trustee</p>
+        </li>
+        <li>
+            <header>
+                <h2>Labour Party</h2>
+                <p>2017</p>
+            </header>
+            <p>Campaign Organiser</p>
+        </li>
+        <li>
+            <header>
+                <h2>Metropolitan Police</h2>
+                <p>2014-2017</p>
+            </header>
+            <p>Special Constable</p>
+        </li>
+        <li>
+            <header>
+                <h2>St Mary's University</h2>
+                <p>2013-2016</p>
+            </header>
+        </li>
+        <li>
+            <header>
+                <h2>Ormiston Bushfield Academy</h2>
+                <p>2010-2012</p>
+            </header>
+        </li>
+        <li>
+            <header>
+                <h2>Orton Longueville School</h2>
+                <p>2005-2012</p>
+            </header>
+        </li>
+    </ul>
+</section>
+
+<section class="cv-section">
+    <header class="section-title">
+        <h1>Projects</h1>
+    </header>
+    <ul>
+        <li>
+            <header>
+                <h2>Digital Transformation at BGL</h2>
+            </header>
+            <p>
+                BGL transitioned from its legacy web system, based on .NET 6, to a new
+                API & Frontend architecture.
+            </p>
+            <p>
+                For several years, I worked on connecting this API with the backend system.
+                I wrote code that validated client requests and made changes to customer
+                policies in our database.
+            </p>
+        </li>
+
+        <li>
+            <header>
+                <h2>Internal testing dashboard</h2>
+            </header>
+            <p>
+                I wrote, from scratch, a new dashboard for displaying automated test results.
+                This was displayed on TV screens in the office.
+            </p>
+            <p>
+                The dashboard was a JSON API written in PHP, accessed by the frontend written
+                in VueJS.
+            </p>
+        </li>
+
+        <li>
+            <header>
+                <h2>Supermarket Price Scanner</h2>
+            </header>
+            <p>
+                I am currently working on a 'microsite' which will track prices of supermarket
+                products over time, showing the increase (or decrease) in graphs for each
+                product type.
+            </p>
+            <p>
+                I have written the data-gathering script in Python. This script uses Playwright
+                to load the supermarkets' websites, search for each product type, and then record
+                the unit price, price per weight, and a dated screenshot of the page.
+            </p>
+            <p>
+                The product search terms, and the results, are stored in a PostgreSQL database
+                and the screenshots are stored in an AWS s3 bucket.
+            </p>
+        </li>
+
+        <li>
+            <header>
+                <h2>Tenant's Union website</h2>
+            </header>
+            <p>
+                I wrote the website for the Peterborough Tenants Union, which includes
+                the API integration with the payment processor to enable individuals to
+                become members and pay their subs.
+            </p>
+        </li>
+
+        <li>
+            <header>
+                <h2>Tenant's Union design system</h2>
+            </header>
+            <p>
+                I have been working on a design system for the Peterborough Tenants' Union
+                website and online services. This is written with StencilJS in Typescript.
+            </p>
+            <p>
+                The design system is based on the principles of the Gov.UK design system but
+                with a bit more colour and flare.
+            </p>
+            <p>
+                The repository is on my GitHub account.
+            </p>
+        </li>
+
+        <li>
+            <header>
+                <h2>Campaign data</h2>
+            </header>
+            <p>
+                While I was in the Labour Party, I used the electoral data held by them along with
+                geographical data from Ordnance Survey to produce graphical maps of voter locations
+                and boundaries.
+            </p>
+        </li>
+
+        <li>
+            <header>
+                <h2>Other design work</h2>
+            </header>
+            <p>I have done some other small bits of design work such as:</p>
+            <ul>
+                <li>A HTML email signature for a small business</li>
+                <li>A website for a local fish & chip shop</li>
+                <li>Digitising the old logo for a primary school</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section class="cv-section">
+    <header class="section-title">
+        <h1>Qualifications and Skills</h1>
+    </header>
+    <ul>
+        <li>
+            <header>
+                <h2>Degree</h2>
+                <p>
+                    Law LLB
+                </p>
+            </header>
+        </li>
+        <li>
+            <header>
+                <h2>A Levels</h2>
+                <ul>
+                    <li>English Literature</li>
+                    <li>Government & Politics</li>
+                    <li>Media Studies</li>
+                    <li>Psychology</li>
+                </ul>
+            </header>
+        </li>
+        <li>
+            <header>
+                <h2>GCSEs</h2>
+                <p>10 GCSEs, including English, Maths and IT</p>
+            </header>
+        </li>
+
+        <li>
+            <header>
+                <h2>Programing languages used</h2>
+                <ul>
+                    <li>PHP</li>
+                    <li>RPGLE</li>
+                    <li>Python</li>
+                    <li>Javascript & Typescript</li>
+                    <li>HTML & CSS</li>
+                </ul>
+            </header>
+        </li>
+
+        <li>
+            <header>
+                <h2>Technical skills, software, and frameworks</h2>
+                <ul>
+                    <li>Adobe Creative Suite</li>
+                    <li>React, VueJS, StencilJS</li>
+                    <li>Flask, Laravel, Django</li>
+                    <li>SQL</li>
+                    <li>QGIS and Postgis</li>
+                </ul>
+            </header>
+        </li>
+
+        <li>
+            <header>
+                <h2>Hobbies and interests</h2>
+                <ul>
+                    <li>35mm Film photography</li>
+                    <li>Homebrew cider and wine</li>
+                    <li>Growing tomatoes</li>
+                    <li>Star Trek (TNG / DS9)</li>
+                </ul>
+            </header>
+        </li>
+    </ul>
+</section>
+
+{% include 'layout/site_footer.html' %}
+{% include 'layout/html_footer.html' %}

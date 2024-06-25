@@ -8,12 +8,16 @@ def index():
     return render_template('index.html')
 
 @app.route('/photography')
-def photos():  # put application's code here
+def photos():
     return render_template('photography.html')
 
 @app.route('/travel')
-def travel():  # put application's code here
+def travel():
     return render_template('travel-map.html')
+
+@app.route('/cv')
+def cv():
+    return render_template('cv.html')
 
 
 if __name__ == '__main__':

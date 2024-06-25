@@ -94,12 +94,18 @@ main > .section {
     font-size: 14pt;
 }
 
+#site-header.cv {
+    flex-direction: column;
+    text-align: center;
+}
+
 #site-nav ul {
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
     gap: 2vmax;
+    flex-wrap: wrap;
 }
 
 #site-footer {
@@ -282,4 +288,92 @@ main > .section {
 
 #photo-grid > .photo:focus aside {
     display: block;
+}
+
+.cv ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: .88ch;
+}
+
+.cv ul li:not(:first-child)::before {
+    content: "•";
+    margin: 1ch;
+}
+
+.section-title h1 {
+    font-size: 18pt;
+    border-bottom: 2px solid black;
+    margin: 0 0 .8em;
+    padding: 0 0 .22em 0;
+}
+
+.cv-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-count: 2;
+    column-gap: 2vmax;
+}
+
+.cv-section li {
+    break-inside: avoid;
+    margin-bottom: 1vmax;
+}
+
+.cv-section li header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12pt;
+    margin-bottom: .2rem;
+}
+
+.cv-section li header * {
+    font-size: inherit;
+    margin: 0;
+}
+
+.cv-section p {
+    margin: 0;
+    margin-bottom: 2mm;
+    font-size: 10.5pt;
+}
+
+.cv-section li ul {
+    list-style: disc;
+    margin-left: 8mm;
+    column-count: 1;
+}
+
+.cv-section li ul li {
+    font-size: 10.5pt;
+    margin-bottom: 3mm;
+}
+
+
+@media print {
+    body {
+        font-size: 11pt;
+    }
+
+    #site-header,
+    #site-footer {
+        font-size: 95%;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:link::after {
+        content: ': ' attr(href)
+    }
+
+    section,
+    .section {
+        break-inside: avoid;
+    }
 }
