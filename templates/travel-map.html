@@ -1,0 +1,68 @@
+{% include 'layout/html_head.html' %}
+{% include 'layout/small_header.html' %}
+
+{% include 'layout/site_nav.html' %}
+
+<article id="travel-map">
+    <div id="map"></div>
+</article>
+
+<section>
+    <p style="margin: 0;">
+        These are the places I've visited over the years.
+    </p>
+</section>
+
+{% include 'layout/site_footer.html' %}
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+<script>
+    var map = L.map('map').setView([50, 9], 5);
+
+    function createCustomIcon(feature) {
+        return L.divIcon({
+            html: `<div style="display: flex; align-items: center;">
+                      <img src="{{url_for('static', filename='pin.png')}}">
+                      <span>${feature.properties.name}</span>
+                   </div>`,
+            className: 'map-pin',
+            iconAnchor: [5, 30]
+        });
+    }
+
+    fetch('{{ url_for('static', filename='cities.geojson') }}')
+        .then(resp => resp.json())
+        .then(cities => {
+            L.geoJSON(cities, {
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, { icon: createCustomIcon(feature) });
+                }
+            }).addTo(map);
+        })
+        .catch(error => console.error('Error loading cities GeoJSON:', error));
+
+    function countryStyle(feature) {
+        return {
+            fillColor: feature.properties.visited ? "greenyellow" : "#000", // Blue for visited, grey for not visited
+            weight: 2,
+            opacity: 1,
+            color: "white", // Border color
+            fillOpacity: 0.7
+        };
+    }
+
+    fetch('{{ url_for('static', filename='countriesV2.geojson') }}')
+        .then(resp => resp.json())
+        .then(countries => {
+            console.log('Countries GeoJSON:', countries); // Debugging log
+            L.geoJSON(countries, {
+                style: countryStyle
+            }).addTo(map);
+        })
+        .catch(error => console.error('Error loading countries GeoJSON:', error));
+</script>
+
+{% include 'layout/html_footer.html' %}

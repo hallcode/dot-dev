@@ -1,0 +1,40 @@
+{% include 'layout/html_head.html' %}
+
+{% include 'layout/main_header.html' %}
+
+
+<section class="block-grid">
+    <article class="block">
+        <a href="/about-me">
+            <h1>About Me</h1>
+        </a>
+    </article>
+
+    <article class="block">
+        <a href="/projects">
+            <h1>Projects</h1>
+        </a>
+    </article>
+
+    <article class="block">
+        <a href="{{ url_for('photos') }}">
+            <h1>Photography</h1>
+        </a>
+    </article>
+
+    <article class="block">
+        <a href="{{ url_for('travel') }}">
+            <h1>Travel Map</h1>
+        </a>
+    </article>
+
+    <article class="block">
+        <a href="/brews">
+            <h1>Brews</h1>
+        </a>
+    </article>
+</section>
+
+
+{% include 'layout/site_footer.html' %}
+{% include 'layout/html_footer.html' %}

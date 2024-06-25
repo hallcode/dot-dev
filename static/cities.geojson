@@ -1,0 +1,32 @@
+{
+"type": "FeatureCollection",
+"name": "cities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "name": "Leicester", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -1.1332489, 52.6299774 ] } },
+{ "type": "Feature", "properties": { "name": "Cambridge", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 0.1166231, 52.2003913 ] } },
+{ "type": "Feature", "properties": { "name": "Scarborough", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -0.4299844, 54.2803935 ] } },
+{ "type": "Feature", "properties": { "name": "Norwich", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 1.3000134, 52.630365 ] } },
+{ "type": "Feature", "properties": { "name": "Peterborough", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -0.248404030339169, 52.567187150649296 ] } },
+{ "type": "Feature", "properties": { "name": "Nottingham", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -1.165706334543335, 52.941084202003999 ] } },
+{ "type": "Feature", "properties": { "name": "Kaunas", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 23.8800305, 54.9504043 ] } },
+{ "type": "Feature", "properties": { "name": "Grenoble", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 5.720002, 45.1803805 ] } },
+{ "type": "Feature", "properties": { "name": "Newcastle", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -1.61162548933458, 54.989742053169572 ] } },
+{ "type": "Feature", "properties": { "name": "Liverpool", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -2.961934009816594, 53.405068298036525 ] } },
+{ "type": "Feature", "properties": { "name": "Leeds", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -1.551347711412841, 53.790016637752316 ] } },
+{ "type": "Feature", "properties": { "name": "Luxembourg", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 6.1300028, 49.6116604 ] } },
+{ "type": "Feature", "properties": { "name": "Zaragoza", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -0.8899821, 41.6500016 ] } },
+{ "type": "Feature", "properties": { "name": "Manchester", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -2.248684667159885, 53.475319924724531 ] } },
+{ "type": "Feature", "properties": { "name": "Birmingham", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -1.9219426, 52.4769198 ] } },
+{ "type": "Feature", "properties": { "name": "Kraków", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 19.9580655, 50.0619251 ] } },
+{ "type": "Feature", "properties": { "name": "Vilnius", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 25.3166353, 54.6833663 ] } },
+{ "type": "Feature", "properties": { "name": "Riga", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 24.0999654, 56.9500238 ] } },
+{ "type": "Feature", "properties": { "name": "Budapest", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 19.0813748, 47.5019522 ] } },
+{ "type": "Feature", "properties": { "name": "Warsaw", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 21.005346737742283, 52.230871973539507 ] } },
+{ "type": "Feature", "properties": { "name": "Brussels", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 4.3313707, 50.8352629 ] } },
+{ "type": "Feature", "properties": { "name": "Madrid", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -3.6852975, 40.4019721 ] } },
+{ "type": "Feature", "properties": { "name": "Berlin", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 13.3996028, 52.5237645 ] } },
+{ "type": "Feature", "properties": { "name": "London", "visited": true }, "geometry": { "type": "Point", "coordinates": [ -0.1186677, 51.5019406 ] } },
+{ "type": "Feature", "properties": { "name": "Paris", "visited": true }, "geometry": { "type": "Point", "coordinates": [ 2.352992461539213, 48.858092316269108 ] } }
+]
+}
