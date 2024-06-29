@@ -5,16 +5,16 @@
 
 <section class="block-grid">
     <article class="block">
-        <a href="/about-me">
+        <a href="{{url_for('about')}}" }>
             <h1>About Me</h1>
         </a>
     </article>
 
-    <article class="block">
-        <a href="/projects">
-            <h1>Projects</h1>
-        </a>
-    </article>
+{#    <article class="block">#}
+{#        <a href="/projects">#}
+{#            <h1>Projects</h1>#}
+{#        </a>#}
+{#    </article>#}
 
     <article class="block">
         <a href="{{ url_for('photos') }}">
@@ -28,11 +28,11 @@
         </a>
     </article>
 
-    <article class="block">
-        <a href="/brews">
-            <h1>Brews</h1>
-        </a>
-    </article>
+{#    <article class="block">#}
+{#        <a href="/brews">#}
+{#            <h1>Brews</h1>#}
+{#        </a>#}
+{#    </article>#}
 </section>
 
 

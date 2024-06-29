@@ -19,6 +19,10 @@ def travel():
 def cv():
     return render_template('cv.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 
 if __name__ == '__main__':
     app.run()
